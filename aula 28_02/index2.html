@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de Soma de Array</h1>
+    <input type="text" id="numeros">
+    <buttomn onclick="CalcularSoma()">Calcular</button>
+        <script>
+            function CalcularSoma(){
+                const inputNumeros = document.querySelector("#numeros").value
+                const numerosArray= inputNumeros.split(`,`).map(Number)
+                let soma = 0;
+                for(let i = 0; i < numerosArray.length; i++){
+                    soma += numerosArray[i]
+                }
+                document.write("A soma dos numeros é: " +soma);
+            }
+        </script>
+</body>
+</html>
