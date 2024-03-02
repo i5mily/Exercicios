@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var numeros = [9, 11, 7, 34, 40];
+        
+        
+        var menorNumero = numeros[0];
+        
+        
+        for (var i = 1; i < numeros.length; i++) {
+            if (numeros[i] < menorNumero) {
+                menorNumero = numeros[i];
+            }
+        }
+        
+        
+        console.log("O menor número é:", menorNumero);
+        </script>
+</body>
+</html>
